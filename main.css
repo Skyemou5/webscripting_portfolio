@@ -1,0 +1,87 @@
+/* Body */
+body {
+    background-color: ivory;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* NAV */
+  @media screen and (max-width: 992px) {
+    #navbar {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightblue;
+    align-items: center;
+    
+  }
+  
+  #navbar div {
+    margin: 15px;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+  }
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: lightblue;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  #navbar div {
+    margin:15px;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+  }
+  #navbar a:hover {
+    color: white;
+  }
+  
+  /* Welcome */
+  
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+    height: 100vh;
+    background-color: green;
+  }
+  
+  #welcome-section a {
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+  }
+  
+  #welcome-section p {
+    
+  }
+  
+  /* Projects */
+  
+  #projects {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+    height: 40vh;  
+  }
