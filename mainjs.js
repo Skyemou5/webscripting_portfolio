@@ -7,4 +7,4 @@ import { vehicles } from './assets/js/vehicles'
 
 // stuff below this makes stuff happen
 
-let cardList = document.querySelector("card-list");
+let cardList = document.querySelector("#projects");
