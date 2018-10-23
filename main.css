@@ -71,6 +71,13 @@ body {
     color: black;
     font-family: roboto;
   }
+
+  #welcome-section img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+  }
   
   /* #welcome-section p {
     
