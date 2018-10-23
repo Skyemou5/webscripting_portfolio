@@ -1,5 +1,4 @@
 //import { films } from './films'
-let luke = document.querySelector('#luke')
 
 
 fetch('https://swapi.co/api/films')
@@ -7,9 +6,8 @@ fetch('https://swapi.co/api/films')
     return response.json();
   })
   .then(function(myJson) {
-    console.log(myJson);
-    luke.textContent = myJson.title
+    console.log(JSON.stringify(myJson));
   });
 
 
-  
+
