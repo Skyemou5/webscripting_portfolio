@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding-left: 15px;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #759FDD ;
   }
   
@@ -78,6 +78,8 @@ body {
     justify-content: space-around;
     width: 200px;
   }
+  
+ 
   
   /* #welcome-section p {
     
