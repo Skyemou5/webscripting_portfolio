@@ -56,6 +56,16 @@ body {
   }
   
   /* Welcome */
+  #profile_section {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #aboutMeWords {
+    background-color: red;
+  }
   
   #welcome-section {
     display: flex;
