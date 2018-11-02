@@ -1,106 +1,138 @@
-/* Body */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Slabo+27px|Yanone+Kaffeesatz');
+
+:root {    
+    /* VARS */
+
+    /* COLORS */
+    --mainColor:#2C6AC4;
+    --secondaryColor: #1DC299;
+    --secondaryColor2: #4D34CA;
+    --compColor: #FFAF26;
+
+    /* text vars */
+    --textColor1: rgb(201, 201, 201);
+
+    /* FONTS */
+    --font1: Montserrat;
+    --font2: Yanone;
+    --font3: Kaffeesatz;
+}
 body {
-    background-color:rgb(159, 218, 223);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  }
-  
-  /* NAV */
-  @media screen and (max-width: 992px) {
-    #navbar {
+    background-color: var(--mainColor);
+    color: var(--textColor1);    
+}
+/* NAV */
+#navbar {
     display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: lightblue;
-    align-items: center;
-    
-  }
-  
-  #navbar div {
-    margin: 15px;
-  }
-  
-  #navbar a {
-    text-decoration: none;
-    color: black;
-    font-family: roboto;
-  }
-  }
-  
-  #navbar {
-    overflow: hidden;
-    background-color: #2C6AC4;
-    position: fixed;
-    top: 0; 
-    width: 100%;
+    justify-content: flex-end;
+    text-align: center;
+    background-color: var(--secondaryColor);
+    font-family: var(--font1);
+}
+.navButton {
+    /* background-color: var(--secondaryColor2); */
+    /* margin: 1em; */
+}
+.navButton a {
+    color: antiquewhite;
     display: flex;
-    justify-content: space-around;
-    
-  }
-  
-  #navbar div {
-    margin:15px;
-  }
-  
-  #navbar a {
+    justify-content: right;
+    /* background-color: var(--secondaryColor); */
     text-decoration: none;
-    color: whitesmoke;
-    font-family: roboto;
-  }
-  #navbar a:hover {
-    color: white;
-  }
-  
-  /* Welcome */
-  #profile_section {
-    background-color: red;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+#welcome-section {
+    font-family: var(--font1);
+}
+/* Profile Card */
+.profile-card {
+    font-family: var(--font1);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-  }
+    background-color: #4D34CA;
+}
+.profile-card img {
+    width: 15em;
+}
 
-  #aboutMeWords {
-    background-color: red;
-  }
-  
-  #welcome-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 15px;
-    /* height: 100vh; */
-    background-color: #759FDD ;
-  }
-  
-  #welcome-section a {
-    text-decoration: none;
-    color: black;
-    font-family: roboto;
-  }
+/* Projects */
+#projects {
+    display: grid;
+}
+.project-block {
+    background-color: rgb(126, 109, 212);
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
 
-  #welcome-section img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 200px;
-  }
-  
- 
-  
-  /* #welcome-section p {
-    
-  } */
-  
-  /* Projects */
-  
-  #projects {
-    background-color: rgb(169, 206, 218);
-    display: flex;
-    justify-content: space-around;
-    padding-left: 15px;
-    height: 40vh;  
-  }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
