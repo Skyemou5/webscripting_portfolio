@@ -62,20 +62,34 @@ body {
 .profile-card img {
     width: 15em;
 }
+.profile-descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+/* #profile-skills {
+    display: flex;
+    justify-content: center;
+} */
 
 /* Projects */
 #projects {
-    display: grid;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
 }
 .project-block {
-    background-color: rgb(126, 109, 212);
-    display: grid;
-    
-        grid-template-columns: 100px 50px 100px;
-        grid-template-rows: 80px auto 80px; 
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
+    /* background-color: rgb(172, 172, 172); */
+    width: 100px;
+    height: 200px;
 }
+.project-pics {
+    width: 90px;
+}
+
+
+
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
